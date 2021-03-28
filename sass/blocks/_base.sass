@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@900&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 *
-  font-family: "Open Sans", sans-serif
+  font-family: "Montserrat", sans-serif
   text-decoration: none
   box-sizing: border-box
   outline: none
@@ -15,5 +15,1950 @@ body
   position: relative
   width: 100%
   margin: 0 auto
-  max-width: 1260px
-  padding: 0 20px
+  max-width: 1330px
+  padding: 0 15px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 230px
+  height: 58px
+  border: 3px solid #ff6200;
+  color: #ff6200;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.26px;
+  transition: .1s
+  cursor: pointer
+  &:hover
+    font-size: 14px;
+    font-weight: 800;
+  &:active
+    background-color: #f17e37;
+    color: #fff
+    font-size: 13px;
+    font-weight: 700;
+  &2
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 280px
+    height: 74px
+    background-image: linear-gradient(to top, #ff6200 0%, #fd8134 100%);
+    cursor: pointer
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 15px 32px 1px rgba(138, 54, 2, 0.1);
+      
+    &:hover
+      box-shadow: none
+    &:active
+      font-weight: 800
+  &3
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 242px;
+    height: 60px;
+    background-color: #fff538;
+    color: #575538;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
+    cursor: pointer
+    box-shadow: 0 15px 32px 1px rgba(138, 54, 2, 0.1);
+    &:hover
+      box-shadow: none
+    &:active
+      font-weight: 800
+
+.header
+  &-top
+    padding: 17px 0
+  &-logo
+    flex-shrink: 0
+    img
+      display: block
+      width: 120px
+      height: auto
+  &-email
+    color: #121212;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    &:hover
+      text-decoration: underline
+  &-contacts
+    margin: 0 30px
+    flex-shrink: 0
+  &-phone
+    color: #121212;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block
+    margin-bottom: 10px
+    letter-spacing: 1.2px;
+    line-height: 1
+    span
+      color: #ff6200;
+    &:hover
+      text-decoration: underline
+  &-time
+    display: block
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    line-height: 1
+  &-city
+    position: relative
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    line-height: 1
+    &__current
+      font-weight: 500;
+      color: #111111;
+      display: inline-block
+      padding: 0 21px 0 6px
+      position: relative
+      cursor: pointer
+      &::after
+        position: absolute
+        top: 4px
+        right: 0
+        content: ''
+        width: 13px
+        height: 6px
+        background: url(../images/icons.svg#arrow-drop) no-repeat center
+        background-size: contain
+        transition: .2s
+      &.active::after
+        transform: rotate(180deg)
+    &__drop
+      position: absolute
+      width: 460px
+      box-sizing: border-box
+      top: 0
+      left: -50px
+      z-index: 10
+      box-shadow: 0 10px 32px 1px rgba(138, 54, 2, 0.19);
+      background-color: #ffffff;
+      padding: 60px 85px 30px
+      overflow: hidden
+      overflow-y: auto
+      max-height: calc(100vh - 100px)
+      opacity: 0
+      visibility: hidden
+      transition: .2s
+      &.active
+        top: 50px
+        opacity: 1
+        visibility: visible
+      &_title
+        display: block
+        margin-bottom: 25px
+        color: #383838;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+    &__list
+      list-style: none
+      padding: 0
+      margin: 0
+    &__item
+      margin-bottom: 30px
+      a
+        color: #121212;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-decoration: underline;
+        letter-spacing: 0.32px;
+        line-height: 1
+        &:hover
+          text-decoration: none
+  &-menu
+    background-color: #4d4d4d;
+    &__container
+      list-style: none
+      margin: 0
+      display: flex
+      align-items: center
+      & > li
+        position: relative
+        flex-grow: 2
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 80px
+        &::after
+          position: absolute
+          right: 0
+          content: ''
+          width: 1px
+          height: 35px
+          top: 22px
+          background: rgba(255,255,255,.3)
+        &:last-child::after
+          display: none
+        &:hover .header-menu__drop
+          top: 100%
+          opacity: 1
+          visibility: visible
+        & > a
+          display: inline-block
+          color: #ffffff;
+          font-family: Montserrat;
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0.26px;
+          &:hover
+            font-weight: 800
+    &__drop
+      position: absolute
+      z-index: 10
+      top: 80%
+      transition: .2s
+      left: 0
+      background-color: #f9f9f9;
+      opacity: 0
+      visibility: hidden
+      margin: 0
+      padding: 40px 20px 10px 75px
+      width: 370px
+      text-align: left
+      list-style: none
+      &::before
+        position: absolute
+        left: 75px
+        top: -10px
+        content: ''
+        border-bottom: 12px solid #f9f9f9
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+      li
+        margin-bottom: 35px
+        a
+          color: #121212;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1
+          text-decoration: underline;
+          letter-spacing: 0.32px;
+          &:hover
+            font-weight: bold
+
+.banner
+  background: url(../images/banner.jpg) no-repeat center
+  background-size: cover
+  position: relative
+  z-index: 2
+  &-wrapper
+    padding: 80px 0 90px
+    &2
+      position: relative
+      padding: 60px 0 140px
+  &-title
+    margin: 0 0 65px
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    max-width: 730px
+    &2
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 44px;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.34px;
+      margin: 0 0 15px
+  &-text
+    color: #383838;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.34px;
+    margin: 15px 0
+    max-width: 700px
+  &-price
+    display: block
+    margin: 15px 0 50px
+    color: #ff6200;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.3px;
+  &-img
+    position: absolute
+    max-height: 100%
+    width: auto
+    bottom: 0
+    right: -250px
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 740px
+  &-service-img
+    position: absolute
+    right: 15px
+    top: 60px
+  &-item
+    width: calc(50% - 40px)
+    display: flex
+    align-items: flex-start
+    margin-bottom: 60px
+    &--service &__img
+      width: 48px
+      height: 48px
+    &__title
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: left;
+      text-transform: uppercase;
+      display: block
+      margin-bottom: 5px
+      letter-spacing: 0.32px;
+      line-height: normal;
+    &__text
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.32px;
+      display: block
+      b
+        color: #ff6200;
+        font-weight: bold
+        display: block
+    &__img
+      width: 58px
+      margin-right: 26px
+      flex-shrink: 0
+      position: relative
+      height: 58px;
+      box-sizing: border-box
+      border: 5px solid #fc7725
+      display: flex
+      align-items: flex-end
+
+.section
+  &-title
+    position: relative
+    padding-left: 66px
+    margin: 0 0 40px
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.32px;
+    clear: both
+    &-block
+      margin-bottom: 45px
+    &-text
+      padding-left: 65px
+      display: block
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+    &::before
+      position: absolute
+      left: 0
+      top: 21px
+      content: ''
+      width: 50px
+      height: 5px
+      background-color: #fff200;
+      opacity: 0.7;
+    &2
+      font-size: 28px;
+      line-height: 1
+      margin-bottom: 15px
+      &::before
+        top: 12px
+    &-inner::before
+      background-image: linear-gradient(to top, #ff6200 0%, #fd8134 100%);
+    
+  &2
+    position: relative
+    &-letter
+      position: absolute
+      right: -30px
+      top: -35px
+      opacity: 0.02;
+      color: #202020;
+      font-family: Garamond;
+      font-size: 512px;
+      font-weight: 700;
+      line-height: 400px
+      text-transform: uppercase;
+      letter-spacing: 20px;
+    &-wrapper
+      padding: 115px 0 90px
+      &::before
+        position: absolute
+        content: ''
+        left: -50px
+        top: 0
+        width: 670px
+        background-color: #f9f9f9;
+        height: calc(100% + 300px)
+    &-content
+      position: relative
+      margin-top: -15px
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+      p
+        margin: 0 0 20px
+
+.material
+  width: 33.333%
+  padding: 0 15px
+  &50
+    width: calc(50% - 20px)
+    .material-img
+      max-width: 410px
+  &-container
+    height: 100%
+    padding-bottom: 70px
+    position: relative
+  &-img
+    position: relative
+    height: 250px
+    margin-bottom: 30px
+    img
+      position: relative
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &::before
+      position: absolute
+      content: ''
+      background-color: #fff538;
+      width: 100%
+      height: 100%
+      top: 8px
+      left: 8px
+  &s
+    padding: 85px 0 105px
+    background-color: #f9f9f9;
+    &-bottom
+      text-align: center
+    &-all-btn
+      position: relative
+      padding-right: 29px
+      display: inline-block
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.32px;
+      &::after
+        position: absolute
+        top: 7px
+        right: 0
+        content: ''
+        width: 16px
+        height: 9px
+        background: url(../images/icons.svg#arrow-drop) no-repeat center
+        background-size: contain
+    &-list
+      display: flex
+      margin: 50px -15px 60px
+      &50
+        justify-content: space-between
+  &-date
+    display: block
+    color: #4d4d4d;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.28px;
+  &-title
+    margin: 15px 0 15px
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+  &-text
+    margin: 0 0 25px
+    color: #202020;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    max-height: 96px
+    overflow: hidden
+  &-btn
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 220px
+    height: 54px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #ff6200;
+    color: #ff6200;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    transition: .2s
+    i
+      display: block
+      width: 11px
+      height: 10px
+      margin-left: 10px
+      background: url(../images/icons.svg#more-arrow) no-repeat center
+      background-size: contain
+      transition: .2s
+    &:hover
+      font-weight: 600
+      i
+        margin-left: 20px
+    &:active
+      color: #fff
+      background: #ff6200
+      i
+        background-image: url(../images/icons.svg#more-arrow-white)
+      
+.bottom
+  position: relative
+  padding: 75px 0
+  &-map
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &-plash
+    position: relative
+    padding: 65px 80px
+    width: 410px;
+    box-shadow: 0 11px 35px rgba(32, 32, 32, 0.21);
+    background-color: #ffffff;
+    &::before
+      position: absolute
+      content: ''
+      top: 11px
+      left: 11px
+      border-left: 3px solid #fff86b;
+      border-top: 3px solid #fff86b;
+      box-sizing: border-box
+      width: 120px
+      height: 100px
+    &__title
+      display: block
+      margin-bottom: 25px
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: left;
+      letter-spacing: 1.2px;
+    &__block
+      margin-bottom: 30px
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+      padding-left: 40px
+      background-repeat: no-repeat 
+      background-position: left center
+      background-size: 24px 24px
+      a
+        color: #383838;
+        &:hover
+          text-decoration: underline
+      &--address
+        background-image: url(../images/icons.svg#address)
+      &--phone
+        background-image: url(../images/icons.svg#phone)
+      &--email
+        background-image: url(../images/icons.svg#mail)
+      &--time
+        background-image: url(../images/icons.svg#time)
+      &--rekv
+        background-image: url(../images/icons.svg#rekv)
+        background-position: top left
+    &__phone
+      ont-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+
+.footer
+  background-color: #4d4d4d;
+  padding: 45px 0
+  &-logo
+    display: inline-block
+    margin-bottom: 15px
+    img
+      display: block
+      width: 100px
+      height: auto
+    &__block
+      flex-shrink: 0
+      max-width: 180px
+  &-copyright
+    display: block
+    opacity: 0.7;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &-razrab
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+    a
+      color: #fc7725;
+      &:hover
+        text-decoration: underline
+
+  &-block
+    &__title
+      display: inline-block
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 0.32px;
+      border-bottom: 2px solid #ff6200;
+      margin-bottom: 15px
+  &-btn
+    margin-bottom: 30px
+  &-contacts
+    max-width: 230px
+  &-phone
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    display: inline-block
+    margin-bottom: 30px
+    span
+      color: #ff6200;
+  &-address
+    display: block
+    opacity: 0.7;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    letter-spacing: 0.84px;
+  &-menu
+    list-style: none
+    padding: 0
+    margin: 5px 0 0
+    &--serv
+      columns: 2
+      margin: 0
+    li
+      margin-bottom: 20px
+      a
+        display: inline-block
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.56px;
+        &:hover
+          color: #fc7725;
+
+.label
+  position: relative
+  display: block
+  margin-bottom: 14px
+  &-span
+    position: absolute
+    top: 26px
+    width: 63px
+    height: 22px
+    left: 0
+    border-right: 2px solid #e9e8db;
+    &__phone
+      background: url(../images/icons.svg#phone-popup) no-repeat center
+      background-size: 20px 20px
+    &__name
+      background: url(../images/icons.svg#name-popup) no-repeat center
+      background-size: 20px 22px
+    &__email
+      background: url(../images/icons.svg#email-popup) no-repeat center
+      background-size: 20px 22px
+.input
+  display: block
+  width: 100%
+  height: 74px
+  background-color: #fafaf5;
+  border: none
+  box-shadow: none
+  padding: 0 15px 0 80px
+  outline: none
+  color: #383838;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  &:focus ~ .label-span, &active ~ .label-span
+    border-color: rgba(255, 245, 56, .5)
+    &__phone
+      background-image: url(../images/icons.svg#phone-popup-active)
+    &__name
+      background-image: url(../images/icons.svg#name-popup-active)
+    &__email
+      background-image: url(../images/icons.svg#email-popup-active)
+  
+.submit
+  border: none
+  outline: none
+  width: 100%
+
+.popup
+  position: fixed
+  z-index: 99
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  visibility: hidden
+  transition: .2s
+  display: flex
+  align-items: center
+  justify-content: center
+  &.active
+    opacity: 1
+    visibility: visible
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #4d4d4d;
+    opacity: 0.4;
+  &-content
+    position: relative
+    padding: 60px 75px
+    width: 460px
+    box-shadow: 0 10px 32px 1px rgba(138, 54, 2, 0.19);
+    background-color: #ffffff;
+    overflow: hidden
+    overflow-y: auto
+  &-close
+    position: absolute
+    color: #383838;
+    top: 14px
+    right: 14px
+    width: 22px
+    height: 22px
+    transform: rotate(45deg)
+    cursor: pointer
+    &::before
+      position: absolute
+      width: 22px
+      height: 2px
+      border-radius: 2px
+      content: ''
+      background: #383838
+      left: 0
+      top: 10px
+    &::after
+      position: absolute
+      height: 22px
+      width: 2px
+      border-radius: 2px
+      content: ''
+      background: #383838
+      top: 0
+      left: 10px
+    &:hover
+      &::before, &::after
+        background: #ff6200
+  &-title
+    display: block
+    margin-bottom: 20px
+    color: #383838;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+  &-subtitle
+    display: block
+    color: #585858;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+  &-form
+    display: block
+    margin-top: 25px
+    &__politic
+      display: block
+      margin-top: 20px
+      color: #9e9e9e;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.17px;
+      a
+        display: inline-block
+        color: #9e9e9e;
+        border-bottom: 1px solid #fff538;
+        &:hover
+          color: #ff6200;
+          border-color: #ff6200;
+
+.serv-main
+  &__list
+    background: url(../images/services-bg.jpg) no-repeat center
+    background-size: cover
+    margin-top: 165px
+  &__flex
+    position: relative
+    top: -100px
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+    &::before
+      position: absolute
+      content: ''
+      width: 100%
+      max-width: 1170px
+      height: 100%
+      max-height: 670px
+      background-color: #fff538;
+      top: -10px
+      left: 50%
+      transform: translateX(-50%)
+  &__item
+    width: 33.333%
+    padding: 0 5px 10px
+    &_container
+      display: block
+      height: 100%
+      position: relative
+      background-color: #f9f9f9;
+      &:hover
+        img
+          transform: scale(1.1)
+    &_img
+      height: 320px
+      overflow: hidden
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: 1s
+    &_content
+      padding: 25px 65px
+    &_title
+      display: block
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 0.32px;
+    &_price
+      display: block
+      color: #fc7725;
+      font-family: Montserrat;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.22px;
+
+.work
+  &-container
+    display: block
+    height: 100%
+    overflow: hidden
+    &:hover
+      img
+        transform: scale(1.1)
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: 1s
+  &:nth-child(3)
+    grid-row: span 2;
+  &s
+    position: relative
+    &-wrapper
+      padding: 90px 0
+      &::before
+        position: absolute
+        content: ''
+        top: 0
+        right: -60px
+        width: 475px
+        background-color: #fff538;
+        height: calc(100% + 440px)
+
+    &-tab
+      display: block
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-decoration: underline;
+      letter-spacing: 0.36px;
+      cursor: pointer
+      border-bottom: 3px solid transparent
+      &.active
+        color: #121212;
+        font-weight: 600
+        text-decoration: none
+        border-color: rgba(255, 242, 0,.7)
+      &:hover
+        text-decoration: none
+        border-color: rgba(255, 242, 0,.7)
+
+      &s
+        position: relative
+        margin: -10px 0 30px
+    &-block
+      display: grid
+      grid-template-rows:  260px 260px
+      grid-template-columns: 33.333% 33.333% 33.333%;
+      grid-gap: 10px;
+      display: none
+      &.active
+        display: grid
+      &s
+        position: relative
+
+.breadcrumbs
+  background-color: #f9f9f9;
+  position: relative
+  z-index: 2
+  padding: 18px 0
+  &-shadow
+    box-shadow: 0 11px 35px rgba(32, 32, 32, 0.1);
+  &-link
+    display: inline-block
+    margin-right: 32px
+    position: relative
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    &::after
+      position: absolute
+      right: -24px
+      top: 6px
+      content: ''
+      width: 12px
+      height: 6px
+      background: url(../images/icons.svg#arrow-drop) no-repeat center
+      background-size: contain
+      transform: rotate(-90deg)
+    &:last-child
+      pointer-events: none
+      &::after
+        display: none
+        margin: 0
+    &:hover
+      color: #fc7725;
+
+.catalog
+  padding: 65px 0 100px
+  &-item
+    display: block
+    margin-bottom: 65px
+    &__container
+      display: flex
+      padding: 0
+    &__img
+      width: 410px
+      margin: 0 40px 0 0
+      flex-shrink: 0
+    &__btn
+      position: static
+
+.pagenavi
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 100px
+  a,span
+    display: block
+    width: 28px
+    height: 28px
+    border: 1px solid #a6a6a6;
+    text-align: center
+    color: #6d6d6d;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px
+    letter-spacing: 0.35px;
+    margin: 0 30px
+    &:hover
+      font-weight: 600
+      color: #ff6200;
+    &.prev, &.next
+      background: url(../images/icons.svg#arrow-drop) no-repeat center
+      background-size: 17px 9px
+      transform: rotate(90deg)
+      border: none
+      transition: .1s
+      &:hover
+        background-size: 19px 11px
+    &.next
+      transform: rotate(-90deg)
+  .current
+    font-weight: 600
+    color: #ff6200;
+    border-color: #ff6200;
+    
+.call
+  padding: 80px 0 100px
+  position: relative
+  &-title
+    padding-left: 66px
+    margin-bottom: 40px
+    max-width: 500px
+    color: #383838;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    &__h
+      position: relative
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 20px
+      line-height: 1
+      letter-spacing: 0.28px;
+      &::before
+        position: absolute
+        content: ''
+        width: 50px
+        height: 5px
+        background-color: #fff200;
+        opacity: 0.7;
+        left: -66px
+        top: 11px
+  &-flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &2
+      display: flex
+      align-items: center
+      justify-content: space-between
+      align-items: center
+  &-col
+    width: calc(50% - 15px)
+  &-input
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.08);
+    border-radius: 2px;
+    background-color: #ffffff;
+  &-label
+    margin-bottom: 30px
+    &-half
+      width: calc(50% - 15px)
+  &-textarea
+    padding: 28px 70px
+    margin-bottom: 30px
+    height: calc(100% - 30px)
+    resize: vertical
+  &-politic, &-submit
+    margin: 0
+    width: calc(50% - 15px)
+
+.team
+  padding: 60px 0 90px
+  background: url(../images/services-bg.jpg) no-repeat center
+  background-size: cover 
+  &-list
+    position: relative
+    display: flex
+    width: 100%
+    &::before
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      top: -10px
+      content: ''
+      width: 100%
+      max-width: 1170px
+      height: 90%
+      background-color: #fff538;
+  &mate
+    position: relative
+    padding: 0 5px
+    flex-shrink: 0
+    &-container
+      background-color: #f9f9f9;
+    &-img
+      height: 310px
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-content
+      padding: 25px 20px
+    &-name
+      display: block
+      margin-bottom: 10px
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    &-text
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+  &-navi
+    position: relative
+    z-index: 2
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 40px
+    &__arrow
+      width: 26px
+      height: 26px
+      display: block
+      background: url(../images/icons.svg#arrow-slider) no-repeat center
+      background-size: 14px 26px
+      cursor: pointer
+      &:hover
+        background-image: url(../images/icons.svg#arrow-slider-hover)
+      &.next
+        transform: rotate(180deg)
+    &__slider
+      margin: 0 60px
+      width: 200px
+  &-range
+    width: 100%
+    -webkit-appearance: none;
+    width: 100%; 
+    background: transparent; 
+    &::-webkit-slider-thumb
+      -webkit-appearance: none;
+    &:focus
+      outline: none;
+    &::-ms-track 
+      width: 100%;
+      cursor: pointer
+      background: transparent; 
+      border-color: transparent;
+      color: transparent
+    &::-webkit-slider-thumb 
+      -webkit-appearance: none;
+      border: none
+      height: 8px;
+      width: 60px;
+      border-radius: 0
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: -14px;
+      box-shadow: none
+    &::-moz-range-thumb 
+      box-shadow: none
+      border: none
+      height: 8px;
+      width: 60px;
+      border-radius: 0
+      background: #ffffff;
+      cursor: pointer;
+    &::-ms-thumb
+      box-shadow: none
+      border: none
+      height: 8px;
+      width: 60px;
+      border-radius: 0
+      background: #ffffff;
+      cursor: pointer;
+    &::-webkit-slider-runnable-track
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      box-shadow: none
+      background: #fff;
+      border-radius: 0;
+      border: none
+      opacity: 0.6
+    &:focus::-webkit-slider-runnable-track 
+      background: #fff;
+    &::-moz-range-track 
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      box-shadow: none
+      background: #fff;
+      opacity: 0.6
+      border-radius: 0;
+      border: none;
+    &::-ms-track 
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 0;
+      color: transparent;
+    &::-ms-fill-lower 
+      background: #fff;
+      border: none;
+      opacity: 0.6
+      border-radius: 0;
+      box-shadow: none
+    &:focus::-ms-fill-lower 
+      background: #fff;
+    &::-ms-fill-upper 
+      background: #fff;
+      border: none;
+      opacity: 0.6
+      border-radius: 0;
+      box-shadow: none
+    &:focus::-ms-fill-upper 
+      background: #fff;
+
+.contacts
+  &-wrapper
+    position: relative
+    padding: 120px 0 90px
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      left: -50px
+      box-sizing: border-box
+      box-shadow: 0 8px 35px rgba(32, 32, 32, 0.1);
+      background-color: #f9f9f9;
+      width: 570px
+      height: calc(100% + 340px)
+  &1
+    position: relative
+    display: flex
+    &-map
+      height: 670px
+      position: relative
+      top: -74px
+      right: -8%
+      flex-grow: 2
+    &-content
+      width: 500px
+      flex-shrink: 0
+  &2
+    position: relative
+  &-list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    padding: 0 0 0 165px
+    margin: 0
+    &__item
+      width: 33.333%
+      padding-left: 26px
+      margin-bottom: 25px
+      position: relative
+      a
+        color: #121212;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        &:hover
+          color: #ff8a41;
+
+      &::before
+        position: absolute
+        content: ''
+        width: 10px;
+        height: 10px;
+        background-color: #ff8a41;
+        border-radius: 100%
+        left: 0
+        top: 8px
+
+.article
+  padding: 70px 0
+  &-more
+    padding: 80px 0 90px
+    background-color: #f9f9f9;
+  &-thumb
+    float: right
+    position: relative
+    width: 624px;
+    height: 374px;
+    margin: 0 0 20px 20px
+    &::before
+      position: absolute
+      content: ''
+      top: 12px
+      left: 12px
+      width: 100%
+      height: 100%
+      background-color: #fff538;
+    img
+      position: relative
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-title
+    margin-bottom: 40px
+  &-content
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    p
+      margin: 0 0 25px
+    &::after
+      content: ''
+      clear: both
+      display: block
+      width: 1px
+      height: 1px
+
+.main
+  position: relative
+  .breadcrumbs
+    background: transparent
+  &-content
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    p
+      margin: 0 0 20px
+  &-subtitle
+    position: relative
+    display: inline-block
+    margin: 30px 0
+    color: #121212;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.22px;
+    &::after
+      position: absolute
+      content: ''
+      bottom: 0
+      right: 0
+      width: 100px;
+      height: 4px;
+      background-color: #fff200;
+      opacity: 0.7;
+
+
+.sale
+  position: relative
+  z-index: 3
+  top: -90px
+  margin-bottom: -60px
+  &-plash
+    padding: 35px 55px 45px
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+    background-color: #f9f9f9;
+  &-content
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    &2
+      color: #4d4d4d;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.28px;
+      width: 280px
+    b
+      color: #ff6200;
+    &__title
+      color: #ff6200;
+      font-size: 28px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.56px;
+  &-btn
+    margin: 10px auto 0
+  &-count
+    &__text
+      display: block
+      margin-top: 15px
+      color: #6d6d6d;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1
+      letter-spacing: 0.28px;
+    &__block
+      display: flex
+      span
+        display: block
+        width: 50px
+        height: 60px
+        margin: 0 4px
+        box-shadow: 0 5px 22px rgba(32, 32, 32, 0.08);
+        background-color: #ffffff;
+        color: #4d4d4d;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    &er
+      flex-shrink: 0
+      margin: 0 45px
+      text-align: center
+      &__div
+        color: #918b8b;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 55px;
+        letter-spacing: 0.3px;
+      &__title
+        display: block
+        margin-bottom: 15px
+        color: #383838;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1
+        letter-spacing: 0.32px;
+      &__flex
+        display: flex
+
+.content
+  &1
+    padding: 70px 0 80px
+    &-flex
+      display: flex
+      margin-top: 50px
+    &-img
+      width: 50%
+      height: 380px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        top: 12px
+        right: 12px
+        width: 100%
+        height: 100%
+        background-color: #fff538;
+      img
+        position: relative
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-link
+      position: relative
+      padding-left: 27px
+      margin-bottom: 20px
+      &::before
+        position: absolute
+        content: ''
+        width: 14px
+        height: 14px
+        left: 0
+        top: 6px
+        background: url(../images/icons.svg#arrow-link) no-repeat center
+        background-size: contain
+      a
+        font-family: Montserrat;
+        font-size: 16px;
+        color: #121212;
+        font-weight: 400;
+        line-height: 26px;
+        text-decoration: underline;
+        letter-spacing: 0.32px;
+        &:hover
+          text-decoration: none
+      &s
+        padding: 0 65px
+        width: 50%
+        &__title
+          display: block
+          margin-bottom: 25px
+          color: #121212;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 26px;
+          letter-spacing: 0.36px;
+        &__container
+          list-style: none
+          padding: 0
+          margin: 0
+        
+.difference
+  padding: 90px 0 120px
+  background-color: #f9f9f9;
+  &-block
+    display: flex
+    width: 100%
+    margin-bottom: 50px
+    &:nth-child(2n) &__slider
+      order: -1
+      margin-left: 0
+      margin-right: 50px
+    &s
+      margin-bottom: -50px
+    &__content
+      padding: 0 65px
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      b
+        display: block
+        font-size: 18px
+        line-height: 26px
+    &__slide
+      &_container
+        height: 280px
+        display: block
+        overflow: hidden
+        img
+          display: block
+          width: 100%
+          height: 100%
+          object-fit: cover
+      &r
+        width: 422px
+        overflow: hidden
+        flex-shrink: 0
+        margin-left: 50px
+        &_nav
+          display: flex
+          align-items: center
+          justify-content: center
+          margin-top: 30px
+        &_arrow
+          display: block
+          width: 29px;
+          height: 15px;
+          background: url(../images/icons.svg#arrow-drop) no-repeat center
+          background-size: 29px 15px
+          cursor: pointer
+          &:hover
+            background-size: 27px 14px
+          &.prev
+            transform: rotate(90deg)
+          &.next
+            transform: rotate(-90deg)
+        &_counter
+          margin: 0 50px
+          color: #4d4d4d;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 26px;
+          text-transform: uppercase;
+          b
+            color: #ff6200;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.44px;
+
+.object
+  width: 25%
+  text-align: center
+  padding: 0 30px
+  &-img
+    width: 58px
+    height: 58px
+    margin: 0 auto 20px
+    border: 5px solid #fc7725;
+    display: flex
+    align-items: flex-end
+  &-title
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.32px;
+  &s
+    background: url(../images/services-bg.jpg) no-repeat center
+    background-size: cover
+    padding: 25px 0
+    &-plash
+      position: relative
+      top: -60px
+      padding: 50px 65px 70px
+      background-color: #fff457;
+    &-title
+      display: inline-block
+      margin-bottom: 50px
+      color: #121212;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0.44px;
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        bottom: -4px
+        right: 0
+        width: 100px;
+        height: 4px;
+        background-image: linear-gradient(to top, #ff6200 0%, #fd8134 100%);
+        opacity: 0.7;
+    &-list
+      display: flex
+
+.vybor
+  padding: 90px 0 70px
+  &-list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -8px
+
+.item
+  width: 33.333%
+  padding: 0 8px 55px
+  &-img
+    height: 275px
+    margin-bottom: 30px
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+    background-color: #ffffff;
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      object-fit: contain
+  &-title
+    display: block
+    margin-bottom: 10px
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+  &-text
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    p
+      margin: 0 0 10px
+    b
+      display: block
+  &-price
+    display: block
+    margin: 20px 0
+    color: #fc7725;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.22px;
+  &-btn
+    width: 100%
+    max-width: 300px
+
+.price
+  &2
+    padding: 60px 0 90px
+  &-table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+    margin-bottom: 25px
+    th,td
+      height: 60px
+      background-color: #d7d7d7;
+      text-align: left
+      color: #383838;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.32px;
+      &:first-child
+        padding-left: 65px
+    td
+      height: 50px
+      background: none;
+      font-size: 15px;
+      font-weight: 400;
+    tr
+      &:nth-child(2n)
+        background-color: #f9f9f9;
+      &:nth-child(n+6)
+        display: none
+        &.active
+          display: table-row
+
+
+
+  &-btn-all
+    display: inline-block
+    margin-left: 65px
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+    padding-right: 28px
+    position: relative
+    cursor: pointer
+    &:hover
+      color: #fc7725;
+    &::after
+      position: absolute
+      content: ''
+      width: 16px
+      height: 10px
+      right: 0
+      top: 4px
+      background: url(../images/icons.svg#arrow-drop) no-repeat center
+      background-size: contain
+
+.inner-call
+  padding: 80px 0
+  background: url(../images/banner.jpg) no-repeat center
+  background-size: cover
+  &__flex
+    display: flex
+    justify-content: space-between
+  &__btn
+    margin: 0 auto
+  .section-title-block
+    margin: 0
+
+.preim
+  padding: 95px 0 0
+  &-list
+    display: flex
+    margin: 50px 0 70px
+  &-item
+    width: 16.67%
+
+.cert
+  width: 12.5%
+  padding: 0 4px
+  &-container
+    display: block
+    height: 225px
+    &:hover
+      img
+        transform: scale(1.05)
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: .5s
+  &s
+    margin: 30px 0 -110px
+    &-list
+      display: flex
+      margin: 0 -4px
+
+.wie
+  padding: 220px 0 120px
+  background-color: #f9f9f9;
+  &-flex
+    padding: 0 65px
+    display: flex
+    justify-content: space-between
+  &-nav
+    width: 470px
+    margin-right: 35px
+    flex-shrink: 0
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+    background-color: #ffffff;
+    padding: 50px 65px
+    overflow: hidden
+    position: relative
+    &::before
+      position: absolute
+
+      content: 'W'
+      opacity: 0.02;
+      color: #202020;
+      font-family: Garamond;
+      font-size: 453px;
+      line-height: 1
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 19.85px;
+      bottom: -130px
+      right: -70px
+    &__link
+      display: block
+      position: relative
+      margin-bottom: 25px
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      text-decoration: underline;
+      cursor: pointer
+      b
+        font-weight: 600;
+      &::after
+        position: absolute
+        content: ''
+        width: 14px
+        height: 14px
+        top: 6px
+        right: 0
+        background: url(../images/icons.svg#arrow-link) no-repeat center
+        background-size: contain
+      &:hover, &.active
+        font-weight: 700;
+        color: #121212;
+        text-decoration: none
+        &:hover
+          font-weight: 700
+        b
+          color: #ff6200;
+      &:hover
+        font-weight: normal
+  &-block
+    display: none
+    padding: 50px 90px
+    text-align: center
+    &.active
+      display: block
+    &s
+      box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+      background-color: #ffffff;
+    &__title
+      display: block
+      margin-bottom: 20px
+      color: #121212;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1
+      b
+        color: #ff6200;
+    &__img
+      height: 295px
+      margin-bottom: 25px
+      overflow: hidden
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__text
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+
+
+
+
+
+
+
+
