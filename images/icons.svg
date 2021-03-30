@@ -140,11 +140,19 @@
 			</g>
 		</g>
 	</svg>
-	
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 14 14">
 		<g id="arrow-link" class="img">
 			<g>
 				<path d="M5.79689,1.58078v0l4.63955,4.64823v0l-10.11921,0.00075v0l-0.00034,1.66254v0h10.1199v0l-4.64836,4.63923v0l1.1808,1.18154v0l6.65222,-6.65167v0l-6.65211,-6.65317v0z" fill="#ff6200" fill-opacity="1">
+				</path>
+			</g>
+		</g>
+	</svg>
+	
+	<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 19 34">
+		<g id="video" class="img">
+			<g>
+				<path d="M1.44415,31.9536l-0.20016,-30.20897c0.55309,-0.56042 1.44985,-0.56042 2.00306,0l14.02164,14.19192c0.55309,0.55893 0.55309,1.46774 0,2.02667l-14.02164,14.19267c-0.55321,0.55968 -1.44997,0.55968 -2.00306,0" fill-opacity="0" fill="#ffffff" stroke-dashoffset="0" stroke-dasharray="" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="20" stroke-width="4" clip-path="url(&quot;#ClipPath1016&quot;)">
 				</path>
 			</g>
 		</g>

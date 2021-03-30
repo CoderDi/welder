@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="libs/slick/slick.css">
+<link rel="stylesheet" href="libs/rangeslider/rangeslider.css">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -461,6 +462,125 @@
       </div>
     </section> -->
 
+    <section class="calc">
+      <div class="wrapper">
+        <div class="section-title-block calc-title-block">
+          <h2 class="section-title section-title2 section-title-inner">Узнайте, сколько стоит замена батарей 
+            отопления в вашем помещении</h2>
+        </div>
+        <div class="calc-flex">
+          <div class="calc-container">
+            <div class="calc-block">
+              <strong class="calc-block__title">Комнаты:</strong>
+              <input class="calc-range" type="range" min="1" max="6" step="1" value="1">
+              <div class="calc-pips flex">
+                <span class="js-pips">1</span>
+                <span class="js-pips">2</span>
+                <span class="js-pips">3</span>
+                <span class="js-pips">4</span>
+                <span class="js-pips">5</span>
+                <span class="js-pips">6</span>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <strong class="calc-block__title">Площадь, м2:</strong>
+              <input class="calc-range" type="range" min="20" max="120" step="10" value="20">
+              <div class="calc-pips flex">
+                <span class="js-pips">20</span>
+                <span class="js-pips">30</span>
+                <span class="js-pips">40</span>
+                <span class="js-pips">50</span>
+                <span class="js-pips">60</span>
+                <span class="js-pips">70</span>
+                <span class="js-pips">80</span>
+                <span class="js-pips">90</span>
+                <span class="js-pips">100</span>
+                <span class="js-pips">110</span>
+                <span class="js-pips">120</span>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <strong class="calc-block__title">Высота батареи:</strong>
+              <input class="calc-range" type="range" min="200" max="650" step="150" value="200">
+              <div class="calc-pips flex">
+                <span class="js-pips">200</span>
+                <span class="js-pips">350</span>
+                <span class="js-pips">500</span>
+                <span class="js-pips">700</span>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <strong class="calc-block__title">Модель радиатора:</strong>
+              <div class="calc-block__flex">
+                <label class="calc-label">
+                  <input type="radio" name="model">
+                  <span class="calc-label__custom">Rifar</span>
+                </label>
+                <label class="calc-label">
+                  <input type="radio" name="model">
+                  <span class="calc-label__custom">Tenrad</span>
+                </label>
+                <label class="calc-label">
+                  <input type="radio" name="model">
+                  <span class="calc-label__custom">Sira</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <strong class="calc-block__title">Тип монтажа:</strong>
+              <div class="calc-block__flex">
+                <label class="calc-label">
+                  <input type="radio" name="type">
+                  <span class="calc-label__custom">Резьба</span>
+                </label>
+                <label class="calc-label">
+                  <input type="radio" name="type">
+                  <span class="calc-label__custom">Сварка</span>
+                </label>
+                <label class="calc-label">
+                  <input type="radio" name="type">
+                  <span class="calc-label__custom">Не знаю/ неважно</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-right">
+            <div class="calc-result">
+              <span class="calc-result__span">Сумма</span>
+              <strong class="calc-result__value">≈ 33 000</strong>
+              <span class="calc-result__old">≈ 33 000</span>
+            </div>
+
+            <form action="" class="calc-form">
+              <span class="calc-form__title">Скидка 7% при заказе с сайта! </span>
+              <span class="calc-form__subtitle">Заполните форму, чтобы 
+                закрепить скидку</span>
+              <label class="label">
+                <input type="tel" name="Phone" class="input popup-form__input" placeholder="">
+                <span class="label-span label-span__phone"></span>
+              </label>
+              <label class="label">
+                <input type="text" name="Name" class="input popup-form__input" placeholder="Введите ваше имя">
+                <span class="label-span label-span__name"></span>
+              </label>
+              <input type="submit" value="оставить заявку" class="btn2 submit popup-form__submit">
+              <span class="calc-form__ps">Расчет калькулятора является примерным. 
+                Для точно расчета <span class="js-getzamer">вызовите замерщика</span></span>
+              <span class="calc-form__politic">Нажимая на кнопку вы соглашаетесь
+                <a href="" target="_blank">на обработку персональных данных</a></span>
+            
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- <section class="price2">
       <div class="wrapper">
         <div class="price">
@@ -606,7 +726,7 @@
       </div>
     </section> -->
 
-    <section class="wie">
+    <!-- <section class="wie">
       <div class="wrapper">
         <div class="section-title-block">
           <h2 class="section-title section-title2">Как мы будем менять ваши батареи</h2>
@@ -667,7 +787,180 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <!-- <section class="types">
+      <div class="wrapper">
+        <strong class="main-subtitle">Какие бывают типы подключений?</strong>
+        <div class="types-slider js-types-slider">
+          <div class="type">
+            <div class="type-container">
+              <div class="type-img"><img src="images/type1.png" alt=""></div>
+              <strong class="type-title">Однотрубная система
+                боковое подключение</strong>
+              <span class="type-text">Подводящая труба, байпас присоединяется к верхнему патрубку, а отводящая - к нижнему. 
+                Такой способ соединения используется для монтажа батарей в квартире с однотрубной системой отопления</span>
+            </div>
+          </div>
+
+          <div class="type">
+            <div class="type-container">
+              <div class="type-img"><img src="images/type2.png" alt=""></div>
+              <strong class="type-title">Однотрубная система
+                диагональное подключение</strong>
+              <span class="type-text">Главный входной патрубок устанавливается сверху с одной стороны батареи, а выходной - снизу, на другой стороне радиаторов. Такой способ в нашей компании используется для установки радиаторов в квартирах с однотрубной системой отопления. Преимущество способа монтажа отопительных систем - батарея выдает максимальную теплоотдачу</span>
+            </div>
+          </div>
+
+          <div class="type">
+            <div class="type-container">
+              <div class="type-img"><img src="images/type1.png" alt=""></div>
+              <strong class="type-title">Однотрубная система
+                боковое подключение</strong>
+              <span class="type-text">Подводящая труба, байпас присоединяется к верхнему патрубку, а отводящая - к нижнему. 
+                Такой способ соединения используется для монтажа батарей в квартире с однотрубной системой отопления</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="sliders">
+      <div class="wrapper">
+        <div class="sliders-wrapper">
+          <div class="slider">
+            <strong class="main-subtitle">Фото монтажа</strong>
+            <div class="difference-block__slider slider-block">
+              <div class="js-difference-slider slider-block__container">
+                <div class="difference-block__slide slider-block__slide">
+                  <a href="" class="difference-block__slide_container slider-block__slide_container">
+                    <img src="images/difference1.jpg" alt="">
+                  </a>
+                </div>
+
+                <div class="difference-block__slide slider-block__slide">
+                  <a href="" class="difference-block__slide_container slider-block__slide_container">
+                    <img src="images/difference2.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="difference-block__slider_nav">
+                <span class="difference-block__slider_arrow prev"></span>
+                <span class="difference-block__slider_counter">
+                  <b class="difference-block__slider--current">1</b> / <span class="difference-block__slider--all">09</span>
+                </span>
+                <span class="difference-block__slider_arrow next"></span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="slider">
+            <strong class="main-subtitle">Видео с объектов</strong>
+            <div class="difference-block__slider slider-block">
+              <div class="js-difference-slider slider-block__container">
+                <div class="difference-block__slide slider-block__slide">
+                  <div class="difference-block__slide_container slider-block__slide_container">
+                    <span class="slider-video-btn"></span>
+                    <div class="slider-video-block"><img src="images/difference1.jpg" alt=""></div>
+                  </div>
+                </div>
+
+                <div class="difference-block__slide slider-block__slide">
+                  <div class="difference-block__slide_container slider-block__slide_container">
+                    <span class="slider-video-btn"></span>
+                    <div class="slider-video-block"><img src="images/difference2.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="difference-block__slider_nav">
+                <span class="difference-block__slider_arrow prev"></span>
+                <span class="difference-block__slider_counter">
+                  <b class="difference-block__slider--current">1</b> / <span class="difference-block__slider--all">09</span>
+                </span>
+                <span class="difference-block__slider_arrow next"></span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="faq">
+      <div class="wrapper">
+        <div class="section-title-block">
+          <h2 class="section-title section-title2">Отвечаем на вопросы об отоплении</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-quest">
+              Как сэкономить на замене батарей?
+            </div>
+            <div class="faq-answer">
+              <ol>
+                <li>Можно отказаться от дизай­нерских радиаторов (90% радиаторов "прячутся" за шторой)</li>
+                <li>Заказывать замену сразу на всю квартиру (больше батарей = больше скидка+бесплатная доставка)</li>
+                <li>Заказывать установку после окончания отопительного сезона (цена на отключение стояков ниже на 20%)</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-quest">
+              Устанавливаете трубы в стену?
+            </div>
+            <div class="faq-answer">
+              <p>Можно отказаться от дизай­нерских радиаторов (90% радиаторов "прячутся" за шторой)</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-quest">
+              Как увеличить теплоотдачу батарей?
+            </div>
+            <div class="faq-answer">
+              <p>Можно отказаться от дизай­нерских радиаторов (90% радиаторов "прячутся" за шторой)</p>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section> -->
+
+    <!-- <section class="form">
+      <div class="wrapper">
+        <div class="form-wrapper">
+          <img src="images/man.png" alt="" class="form-img">
+          <form action="" class="form-content">
+            <div class="section-title-block">
+              <h2 class="section-title section-title2 section-title-inner">Расчитаем точную стоимость работ</h2>
+              <span class="section-title-text">Оставьте номер телефона и через 5 минут с вами свяжется 
+                специалист и рассчитает стоимость и сроки выполнения работ</span>
+            </div>
+            <div class="form-flex">
+              <label class="label">
+                <input type="tel" name="Phone" class="input popup-form__input" placeholder="">
+                <span class="label-span label-span__phone"></span>
+              </label>
+              <label class="label">
+                <input type="text" name="Name" class="input popup-form__input" placeholder="Введите ваше имя">
+                <span class="label-span label-span__name"></span>
+              </label>
+              <input type="submit" value="заказать звонок" class="btn2 submit popup-form__submit">
+              <span class="popup-form__politic form-politic">Нажимая на кнопку вы соглашаетесь
+                <a href="" target="_blank">на обработку персональных данных</a></span>
+            </div>
+          </form>
+        </div>        
+      </div>
+    </section> -->
 
   </main>
 
@@ -675,6 +968,7 @@
   
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/rangeslider/rangeslider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

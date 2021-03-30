@@ -1,0 +1,218 @@
+@media screen and (max-width: 1170px)
+  .banner
+    &-img
+      bottom: 0
+      right: 0
+      width: 40%
+  .header
+    &-email
+      font-size: 14px
+    &-city
+      span
+        display: block
+        margin-bottom: 3px
+
+
+@media screen and (max-width: 980px)
+  .header
+    &-top
+      &__wrapper
+        flex-wrap: wrap
+    &-city
+      span
+        display: inline-block
+    &-contacts
+      width: 70%
+      margin: 15px 0 0
+    &-btn
+      width: 30%
+      margin: 15px 0 0
+  .serv-main
+    &__item
+      width: 50%
+  .work
+    &s
+      &-tab
+        display: inline-block
+        margin-right: 30px
+        margin-bottom: 10px
+        &s
+          display: block
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &-logo
+      &__block
+        order: -2
+    &-contacts
+      order: -1
+    &-block
+      width: 60%
+      margin: 20px 0
+      &2
+        width: 40%
+        padding-left: 40px
+
+
+@media screen and (max-width: 768px)
+  .header
+    &-logo
+      img
+        width: 55px
+        height: 22px
+    &-top
+      padding: 7px 0 14px
+    &-email
+      display: none
+    &-city
+      width: calc(100% - 100px)
+      text-align: center
+    &-time
+      display: none
+    &-contacts
+      order: 10
+      margin-top: 7px
+      width: calc(100% - 160px)
+      text-align: center
+    &-btn
+      width: 150px;
+      height: 38px;
+      border: 2px solid #ff6200;
+      font-size: 9px;
+      margin-top: 7px
+      &:hover, &:active
+        font-size: 9px
+    &-phone
+      font-size: 14px;
+      margin: 0
+    &-menu
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      background-color: #4d4d4d;
+      z-index: 90
+      padding-bottom: 35px
+      max-height: 100vh
+      overflow-y: auto
+      &__container
+        display: block
+        padding: 20px 0 40px
+        & > li
+          position: static
+          height: 50px
+          text-align: left
+          justify-content: flex-start
+          &::after
+            display: none
+      &__close
+        display: block
+        position: absolute
+        top: 14px
+        right: 14px
+        width: 22px
+        height: 22px
+        transform: rotate(45deg)
+        cursor: pointer
+        &::before
+          position: absolute
+          width: 22px
+          height: 2px
+          border-radius: 2px
+          content: ''
+          background: #ff6200;
+          left: 0
+          top: 10px
+        &::after
+          position: absolute
+          height: 22px
+          width: 2px
+          border-radius: 2px
+          content: ''
+          background: #ff6200;
+          top: 0
+          left: 10px
+      &__mobile
+        display: block
+        .header
+          &-btn
+            margin: 15px 0
+          &-time
+            display: block
+            margin: 20px 0
+            opacity: 0.8;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+          &-contacts
+            margin: 0
+            width: 100%
+            text-align: left
+          &-phone
+            color: #fff
+          &-email
+            display: inline-block
+            color: #fff
+      &__drop
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #fff
+        opacity: 1
+        visibility: visible
+        padding: 30px 15px
+
+
+  .butter
+    position: relative
+    display: flex
+    align-items: center
+    width: 32px;
+    height: 32px;
+    padding: 5px
+    flex-shrink: 0
+    background-image: linear-gradient(to top, #ff6200 0%, #fd8134 100%);
+    i
+      position: relative
+      display: block
+      width: 15px;
+      height: 2px;
+      background-color: #ffffff;
+      &::before
+        position: absolute
+        left: 0
+        top: -5px
+        content: ''
+        width: 23px;
+        height: 2px;
+        background-color: #ffffff;
+      &::after
+        position: absolute
+        left: 0
+        top: 5px
+        content: ''
+        width: 19px;
+        height: 2px;
+        background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

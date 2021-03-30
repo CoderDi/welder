@@ -15,7 +15,8 @@
         <div class="header-top__wrapper flex">
           <a href="" class="header-logo"><img src="images/logo.png" alt=""></a>
           <div class="header-city">
-            Ваш город:<strong class="header-city__current">Москва</strong>
+            <span>Ваш город:</span>
+            <strong class="header-city__current">Москва</strong>
             <div class="header-city__drop">
               <strong class="header-city__drop_title">выберите город</strong>
               <ul class="header-city__list">
@@ -37,6 +38,7 @@
               </ul>
             </div>
           </div>
+          <div class="butter"><i></i></div>
           <a href="mailto:info@welder-msk.ru" class="header-email">info@welder-msk.ru</a>
           <div class="header-contacts">
             <a href="tel:+7 (495) 768 78 72" class="header-phone"><span>+7 (495)</span> 768 78 72</a>
@@ -49,10 +51,11 @@
 
     <div class="header-menu">
       <div class="wrapper">
+        <div class="header-menu__close js-menu-close"></div>
         <ul class="header-menu__container">
           <li><a href="">стоимость</a></li>
           <li>
-            <a href="">уСЛУГИ</a>
+            <a>уСЛУГИ</a>
             <ul class="header-menu__drop">
               <li><a href="">Замена батарей</a></li>
               <li><a href="">Замена стояков</a></li>
@@ -66,6 +69,17 @@
           <li><a href="">ВАКАНСИИ</a></li>
           <li><a href="">КОНТАКТЫ</a></li>
         </ul>
+
+        <div class="header-menu__mobile">
+          <a href="" class="header-logo"><img src="images/logo-white.png" alt=""></a>
+          <span class="btn header-btn js-getcall">ОБРАТНЫЙ ЗВОНОК</span>
+          <div class="header-contacts">
+            <a href="tel:+7 (495) 768 78 72" class="header-phone"><span>+7 (495)</span> 768 78 72</a>
+            <span class="header-time">пн - вс с 08:00 до 20:00</span>
+          </div>
+          <a href="mailto:info@welder-msk.ru" class="header-email">info@welder-msk.ru</a>
+          
+        </div>
       </div>
     </div>
   </header>
@@ -334,7 +348,7 @@
             <li><a href="">Сварка труб НПД</a></li>
           </ul>
         </div>
-        <div class="footer-block">
+        <div class="footer-block footer-block2">
           <ul class="footer-menu">
             <li><a href="">Стоимость</a></li>
             <li><a href="">Полезные материалы</a></li>
@@ -388,7 +402,8 @@
   
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/rangeslider/rangeslider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -132,7 +132,7 @@ body
       font-weight: 500;
       color: #111111;
       display: inline-block
-      padding: 0 21px 0 6px
+      padding: 0 21px 0 0
       position: relative
       cursor: pointer
       &::after
@@ -195,9 +195,12 @@ body
           text-decoration: none
   &-menu
     background-color: #4d4d4d;
+    &__mobile, &__close
+      display: none
     &__container
       list-style: none
       margin: 0
+      padding: 0
       display: flex
       align-items: center
       & > li
@@ -231,7 +234,7 @@ body
           text-transform: uppercase;
           letter-spacing: 0.26px;
           &:hover
-            font-weight: 800
+            font-weight: 600
     &__drop
       position: absolute
       z-index: 10
@@ -274,6 +277,7 @@ body
   z-index: 2
   &-wrapper
     padding: 80px 0 90px
+    position: relative
     &2
       position: relative
       padding: 60px 0 140px
@@ -999,14 +1003,15 @@ body
     &-block
       display: grid
       grid-template-rows:  260px 260px
-      grid-template-columns: 33.333% 33.333% 33.333%;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
       display: none
       &.active
         display: grid
       &s
         position: relative
-
+.butter
+  display: none
 .breadcrumbs
   background-color: #f9f9f9;
   position: relative
@@ -1954,6 +1959,423 @@ body
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.3px;
+
+.type
+  padding: 0 60px
+  &-img
+    height: 330px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      display: block
+      max-width: 100%
+      max-height: 100%
+  &-title
+    display: block
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin: 5px 0
+    padding-left: 50px
+  &-text
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    display: block
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-left: 50px
+
+  &s
+    padding: 95px 0 40px
+    &-slider
+      margin-top: 50px
+      padding: 0 20px
+      display: flex
+      .slick
+        &-arrow
+          position: absolute
+          z-index: 2
+          top: 130px
+          width: 50px
+          height: 26px
+          transform: rotate(90deg)
+          background: url(../images/icons.svg#arrow-drop) no-repeat center
+          background-size: 50px 26px
+          border: none
+          font-size: 0
+          color: transparent
+          cursor: pointer
+          transition: .2s
+          &:hover
+            background-size: 45px 24px
+          
+        &-prev
+          left: 0
+        &-next
+          right: 0
+          transform: rotate(-90deg)
+
+.slider
+  width: 50%
+  padding: 15px 65px 55px
+  &-block
+    width: 100%
+    margin: 0
+    overflow: visible
+    &__slide
+      &_container
+        height: 360px
+        position: relative
+    &__container
+      &::before
+        position: absolute
+        content: ''
+        top: 8px
+        left: 8px
+        width: 100%
+        height: 100%
+        background-color: #fff538;
+  &:hover
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+    background-color: #ffffff;
+  &s
+    padding: 45px 0 120px
+    &-wrapper
+      display: flex
+      width: 100%
+  &-video
+    &-block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-btn
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 2
+      width: 68px
+      height: 68px
+      background: url(../images/icons.svg#video) no-repeat center
+      background-size: 17px 32px
+      cursor: pointer
+      &:hover
+        &::before
+          transform: rotate(90deg)
+        &::after
+          transform: rotate(-180deg)
+          bottom: -10px
+          top: -3px
+      &:active
+        background-size: 15px 30px
+      &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: url(../images/video-ellipse1.png) no-repeat center
+        background-size: contain
+        transition: .3s
+      &::after
+        position: absolute
+        content: ''
+        top: -10px
+        left: -8px
+        right: -8px
+        bottom: -3px
+        background: url(../images/video-ellipse2.png) no-repeat center
+        background-size: contain
+        transition: .3s
+
+.faq
+  background-color: #f9f9f9;
+  padding: 90px 0 80px
+  &-list
+    margin-top: 40px
+  &-item
+    box-shadow: 0 5px 22px rgba(32, 32, 32, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px
+    padding: 30px 65px
+  &-quest
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    cursor: pointer
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      top: 5px
+      right: 0
+      width: 28px
+      height: 15px
+      background: url(../images/icons.svg#arrow-drop) no-repeat center
+      background-size: contain
+      transition: .2s
+    &.active::after
+      transform: rotate(180deg)
+  &-answer
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    padding-top: 15px
+    margin-bottom: -10px
+    display: none
+    p
+      margin: 0 0 15px
+    ol
+      margin: 0
+      padding: 0
+      counter-reset:  item;
+      list-style-type: none;
+      li
+        margin-bottom: 10px
+        &::before
+          counter-increment: item;
+          content: counter(item) ". ";
+          font-weight: bold;
+
+.form
+  background: url(../images/banner.jpg) no-repeat center
+  background-size: cover
+  &-wrapper
+    padding: 90px 0 70px
+  &-content
+    max-width: 690px
+    position: relative
+  &-img
+    position: absolute
+    bottom: 0
+    left: 590px
+    max-height: 95%
+  &-flex
+    margin-left: 65px
+    max-width: 380px
+  &-politic
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.24px;
+    a
+      color: #595959
+      display: inline-block
+      border-bottom: 1px solid rgba(255, 98, 0, .5)
+      &:hover
+        border-color: transparent
+
+.calc
+  background: url(../images/banner.jpg) no-repeat center
+  background-size: cover
+  padding: 65px 0 50px
+  &-title
+    &-block
+      max-width: 700px
+  &-flex
+    display: flex
+    justify-content: space-between
+  &-right
+    width: 380px
+    margin-left: 180px
+    flex-shrink: 0
+  &-container
+    flex-grow: 2
+  &-block
+    margin-bottom: 35px
+    &__title
+      display: block
+      margin-bottom: 15px
+      color: #121212;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+    &__flex
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: -10px
+  &-label
+    input
+      display: none
+      &:checked ~ .calc-label__custom
+        color: #121212;
+        font-weight: 500;
+        background-color: #ff883e;
+    &__custom
+      display: flex
+      margin-bottom: 10px
+      align-items: center
+      justify-content: center
+      text-align: center
+      cursor: pointer
+      margin-right: 30px
+      height: 46px;
+      background-color: #f9f9f9;
+      color: #4d4d4d;
+      font-family: Gilroy;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.32px;
+      flex-shrink: 0
+      padding: 0 30px
+      min-width: 160px
+  &-result
+    margin-bottom: 30px
+    &__span
+      display: block
+      color: #121212;
+      font-size: 23px;
+      font-weight: 600;
+      letter-spacing: 0.23px;
+    &__value
+      display: block
+      margin: 10px 0 15px
+      color: #ff6200;
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 42px;
+      letter-spacing: 0.36px;
+    &__old
+      position: relative
+      display: inline-block
+      color: #4d4d4d;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 42px;
+      letter-spacing: 0.26px;
+      &::after
+        position: absolute
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: #ff6200;
+        left: 0
+        top: calc(50% - 1px)
+  &-form
+    &__title
+      display: block
+      color: #121212;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.23px;
+      margin-bottom: 10px
+    &__subtitle
+      display: block
+      margin-bottom: 25px
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+    &__ps
+      display: block
+      margin: 15px 0
+      color: #383838;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      span
+        color: #ff6200;
+        font-weight: 600;
+        display: inline-block
+        border-bottom: 1px solid #ff6200
+        cursor: pointer
+        line-height: 1
+        &:hover
+          border-color: transparent
+    &__politic
+      color: #595959;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.24px;
+      a
+        display: inline-block
+        color: #ff6200;
+        line-height: 1.2
+        border-bottom: 1px solid #ff6200;
+        &:hover
+          border-color: transparent
+  &-pips
+    span
+      color: #4d4d4d;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+      position: relative
+      padding-top: 25px
+      text-align: center
+      width: 20px
+      &::before
+        position: absolute
+        content: ''
+        width: 1px
+        height: 18px
+        background-color: #4d4d4d;
+        opacity: 0.4;
+        top: 0
+        left: 50%
+
+.rangeslider
+  height: 7px
+  background-color: #ff883e;
+  &__fill
+    height: 9px;
+    border: 3px solid #f9f9f9;
+    background-color: #fc7725;
+  &--horizontal &__handle
+    top: -11px
+  &__handle
+    z-index: 2
+    width: 29px
+    height: 29px
+    border: 9px solid #fff
+    background-color: #fc7725;
+    border-radius: 100%
+    &:hover
+      &::before
+        position: absolute
+        content: ''
+        border: 1px solid #4d4d4d;
+        opacity: 0.5;
+        border-radius: 100%
+        top: -3px
+        left: -3px
+        right: -3px
+        bottom: -3px
+
+
+
 
 
 

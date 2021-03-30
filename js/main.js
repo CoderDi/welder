@@ -69,6 +69,16 @@ $(document).ready(function(){
     $(this).addClass("active").parents(".wie-flex").find("#"+$(this).data("block")).addClass("active");
   });
 
+  $(".js-types-slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: false
+  });
+
+  $(".faq-quest").click(function(){
+    $(this).toggleClass("active").next(".faq-answer").slideToggle(200);
+  });
+
  
 
   $("a[href^='#']").click(function(){
@@ -104,6 +114,38 @@ $(document).ready(function(){
     }
     
   });
+
+
+  // CALC
+  $(".js-pips").click(function(){
+    var value = parseInt($(this).text());
+    $(this).parents(".calc-block").find("input").val(value).change();
+    calculate();
+  });
+
+  $("input[type='range']").rangeslider({
+    polyfill: !1,
+    onSlide: function (a, b) {
+      calculate();
+    },
+});
+  //разделение суммы по разрядам с пробелом
+    function numSpacing(num) {
+      return String(parseFloat(num)).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+    }
+    
+    //удаление пробелов в числе
+    function normaleNum(num) {
+        return parseFloat(num.split(' ').join(''));
+    }
+
+    function calculate(withTable) {
+        
+    }
+    
+    if ($("#calc").length) {
+        calculate(1);
+    }
 
 
 });
