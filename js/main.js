@@ -24,7 +24,27 @@ $(document).ready(function(){
     slidesToShow: 4, 
     slidesToScroll: 1,
     arrows: false,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
   $('input[type="range"]').on("input change", function(e){
     e.preventDefault();
@@ -72,7 +92,16 @@ $(document).ready(function(){
   $(".js-types-slider").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true
+        }
+      }
+    ]
   });
 
   $(".faq-quest").click(function(){
@@ -86,34 +115,29 @@ $(document).ready(function(){
     $("html, body").animate({scrollTop: $(_href).offset().top});
     return false;
   });
+  $(".js-menu-drop").click(function(){
+    $(".header-menu__drop").addClass("active");
+  });
 
   $(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");
     $(".input-date").mask("99.99.99");
   });
 
-
-
-  var myMap;
-  ymaps.ready(function () {
-    if ($("#map").length != 0) {
-          myMap = new ymaps.Map('map', {
-          center: [55.714019, 37.619980],
-          zoom: 17,
-        }),
-        myPlacemark = new ymaps.Placemark([55.714019, 37.619980], {
-          hintContent: 'г. Москва, ул. Пушкина, д. 35а, оф. 216',
-          balloonContent: 'г. Москва, ул. Пушкина, д. 35а, оф. 216'
-        }, {
-          iconLayout: 'default#image',
-          iconImageHref: '../images/pin.png',
-          iconImageSize: [102, 78],
-          iconImageOffset: [-51, -53]
-        });
-        myMap.geoObjects.add(myPlacemark);
-    }
-    
+  $(".butter").click(function(){
+    $(".header-menu").addClass("active");
   });
+  $(".js-menu-close").click(function(){
+    $(".header-menu").removeClass("active");
+  });
+  $(".header-menu__drop_close").click(function(){
+    
+    $(".header-menu__drop").removeClass("active");
+  });
+
+
+
+ 
 
 
   // CALC
@@ -148,4 +172,25 @@ $(document).ready(function(){
     }
 
 
+
+    var myMap;
+    ymaps.ready(function () {
+      if ($("#map").length != 0) {
+            myMap = new ymaps.Map('map', {
+            center: [55.714019, 37.619980],
+            zoom: 17,
+          }),
+          myPlacemark = new ymaps.Placemark([55.714019, 37.619980], {
+            hintContent: 'г. Москва, ул. Пушкина, д. 35а, оф. 216',
+            balloonContent: 'г. Москва, ул. Пушкина, д. 35а, оф. 216'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: '../images/pin.png',
+            iconImageSize: [102, 78],
+            iconImageOffset: [-51, -53]
+          });
+          myMap.geoObjects.add(myPlacemark);
+      }
+      
+    });
 });

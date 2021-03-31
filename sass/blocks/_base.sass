@@ -249,6 +249,20 @@ body
       width: 370px
       text-align: left
       list-style: none
+      &_close
+        display: none
+      &_link
+        position: relative
+        &::after
+          position: absolute
+          right: -20px
+          top: 4px
+          content: ''
+          width: 13px
+          height: 7px
+          background: url(../images/icons.svg#arrow-drop) no-repeat center
+          background-size: contain
+
       &::before
         position: absolute
         left: 75px
@@ -293,6 +307,7 @@ body
     letter-spacing: 0.6px;
     max-width: 730px
     &2
+      position: relative
       color: #121212;
       font-family: Montserrat;
       font-size: 34px;
@@ -303,6 +318,7 @@ body
       letter-spacing: 0.34px;
       margin: 0 0 15px
   &-text
+    position: relative
     color: #383838;
     font-family: Montserrat;
     font-size: 17px;
@@ -327,6 +343,7 @@ body
     bottom: 0
     right: -250px
   &-list
+    position: relative
     display: flex
     flex-wrap: wrap
     justify-content: space-between
